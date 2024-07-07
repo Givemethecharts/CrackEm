@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<body style="background-image: url('{% static 'images/register_page_background.png' %}');
+        background-size: cover">
+    <div class="form-container">
+
+
+      <form action="{% url 'register-page' %}" method="post" class="registration-form" >
+
+          {{ form.as_p }}
+          <button type="submit" class="registration-form">Register</button>
+          {% csrf_token %}
+      </form>
+    </div>
+
+</body>
+{% endblock %}

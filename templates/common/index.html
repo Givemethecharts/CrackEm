@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+<body style="background-image: url('{% static 'images/background.jpg' %}'); background-size: auto">
+
+
+
+  <img src="{% static 'images/Call-of-Duty-Modern-Warfare-PNG-Picture.png' %}"
+         class="image-resize" alt="gun-image">
+
+
+  <div class="text-container">
+
+
+      <p id="greetingText">Welcome to CrackEm.<br>
+           <br>
+          <img src="{% static 'images/pngwing.com (1).png' %}" alt="upper-image" class="image">
+          <br>
+
+     To learn the best weapon builds for you <br> and your play style click the register button.<br>
+    ASAP!</p>
+  </div>
+
+
+
+</body>
+{% endblock %}
+

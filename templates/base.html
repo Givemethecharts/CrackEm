@@ -1,0 +1,49 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrackEm</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %} ">
+
+
+
+</head >
+<header >
+
+
+
+    <img src="{% static 'images/nobackground.png' %}" alt="left-decor" class="left_decor_of_logo">
+
+
+    <a href="{% url 'home-page' %}">
+          <img src="{% static 'images/1fdde2b6-c1c0-4a39-a81d-968f20939fff.png' %}" alt="My Website Logo" class="logo">
+      </a>
+        <img src="{% static 'images/nobackground_rotated.png' %}" alt="right-decor" class="right_decor_of_logo">
+
+  <nav>
+
+    <ul class="nav-links">
+
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="auth-buttons">
+      <a href="{% url 'register-page' %}" class="btn">Register</a>
+      <a href="#" class="btn">Login</a>
+    </div>
+  </nav>
+
+</header>
+{% block content %}
+<body >
+
+
+</body>
+{% endblock %}
+
+
+</html>
